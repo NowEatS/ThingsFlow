@@ -25,6 +25,7 @@ class MainViewController: UIViewController {
         
         setUpUILayout()
         setUpTableView()
+        checkUserDefaluts()
         requestIssueList(owner: owner, repository: repository)
     }
     
@@ -42,8 +43,7 @@ class MainViewController: UIViewController {
             switch result {
             case let .success(issues):
                 self?.issues = issues
-                self?.owner = owner
-                self?.repository = repository
+                self?.setUserDefaults(owner: owner, repository: repository)
                 self?.reloadTableview()
                 
             case let .failure(error):
@@ -51,6 +51,21 @@ class MainViewController: UIViewController {
                 self?.showErrorAlert(errorMessage: error.rawValue)
             }
         }
+    }
+    
+    private func checkUserDefaluts() {
+        let userDefaluts = UserDefaults.standard
+        guard let owner = userDefaluts.value(forKey: UDKey.owner) as? String, let repository = userDefaluts.value(forKey: UDKey.repository) as? String else { return }
+        self.owner = owner
+        self.repository = repository
+    }
+    
+    private func setUserDefaults(owner: String, repository: String) {
+        let userDefaluts = UserDefaults.standard
+        self.owner = owner
+        self.repository = repository
+        userDefaluts.setValue(owner, forKey: UDKey.owner)
+        userDefaluts.setValue(repository, forKey: UDKey.repository)
     }
     
     private func showErrorAlert(errorMessage: String) {

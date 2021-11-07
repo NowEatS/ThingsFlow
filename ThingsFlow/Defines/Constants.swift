@@ -15,3 +15,8 @@ enum TFContentsURL {
     static let ThingsFlow_Banner: String = "https://s3.ap-northeast-2.amazonaws.com/hellobot-kr-test/image/main_logo.png"
     static let ThingsFlow_WebSite: String = "http://thingsflow.com/ko/home"
 }
+
+enum UDKey {
+    static let owner: String = "owner"
+    static let repository: String = "repository"
+}
