@@ -53,7 +53,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
+    
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        if let url = URLContexts.first?.url {
+            print("URL - \(url)")
+            
+            let urlString = url.absoluteString
+            let array = urlString.components(separatedBy: "//")
+            let result = array[1].components(separatedBy: "/")
+            let owner = result[0]
+            let repository = result[1]
+            
+            let userDefaluts = UserDefaults.standard
+            userDefaluts.setValue(owner, forKey: UDKey.owner)
+            userDefaluts.setValue(repository, forKey: UDKey.repository)
+        }
+    }
 }
 
