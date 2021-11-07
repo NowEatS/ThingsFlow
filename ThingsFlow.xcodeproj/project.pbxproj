@@ -9,21 +9,42 @@
 /* Begin PBXBuildFile section */
 		7B9D7D2F27379D6100F0183B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D7D2E27379D6100F0183B /* AppDelegate.swift */; };
 		7B9D7D3127379D6100F0183B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D7D3027379D6100F0183B /* SceneDelegate.swift */; };
-		7B9D7D3327379D6100F0183B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D7D3227379D6100F0183B /* ViewController.swift */; };
-		7B9D7D3627379D6100F0183B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9D7D3427379D6100F0183B /* Main.storyboard */; };
+		7B9D7D3327379D6100F0183B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D7D3227379D6100F0183B /* MainViewController.swift */; };
 		7B9D7D3827379D6400F0183B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9D7D3727379D6400F0183B /* Assets.xcassets */; };
 		7B9D7D3B27379D6400F0183B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9D7D3927379D6400F0183B /* LaunchScreen.storyboard */; };
+		F3694C242737A96700942074 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3694C232737A96700942074 /* SnapKit */; };
+		F3694C272737A98E00942074 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F3694C262737A98E00942074 /* Alamofire */; };
+		F3694C292737B2F500942074 /* IssueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3694C282737B2F500942074 /* IssueModel.swift */; };
+		F3694C2C2737B63A00942074 /* TFNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3694C2B2737B63A00942074 /* TFNetworkManager.swift */; };
+		F3694C2E2737B72200942074 /* TFLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3694C2D2737B72200942074 /* TFLogger.swift */; };
+		F3694C302737B7E500942074 /* TFInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3694C2F2737B7E500942074 /* TFInterceptor.swift */; };
+		F3694C322737B91200942074 /* TFSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3694C312737B91200942074 /* TFSearchRouter.swift */; };
+		F3694C352737B9C500942074 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3694C342737B9C500942074 /* Constants.swift */; };
+		F3694C372737BC5000942074 /* TFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3694C362737BC5000942074 /* TFError.swift */; };
+		F3694C3B2737C7E700942074 /* TFTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3694C3A2737C7E700942074 /* TFTableViewCell.swift */; };
+		F3694C3E2737C7FA00942074 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3694C3D2737C7FA00942074 /* UITableViewCell+Extensions.swift */; };
+		F3D7EC402737D793000487D0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F3D7EC3F2737D793000487D0 /* Kingfisher */; };
+		F3D7EC422737E20B000487D0 /* IssueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7EC412737E20B000487D0 /* IssueDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7B9D7D2B27379D6100F0183B /* ThingsFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThingsFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B9D7D2E27379D6100F0183B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B9D7D3027379D6100F0183B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7B9D7D3227379D6100F0183B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7B9D7D3527379D6100F0183B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B9D7D3227379D6100F0183B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7B9D7D3727379D6400F0183B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B9D7D3A27379D6400F0183B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B9D7D3C27379D6400F0183B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3694C282737B2F500942074 /* IssueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueModel.swift; sourceTree = "<group>"; };
+		F3694C2B2737B63A00942074 /* TFNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFNetworkManager.swift; sourceTree = "<group>"; };
+		F3694C2D2737B72200942074 /* TFLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFLogger.swift; sourceTree = "<group>"; };
+		F3694C2F2737B7E500942074 /* TFInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFInterceptor.swift; sourceTree = "<group>"; };
+		F3694C312737B91200942074 /* TFSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFSearchRouter.swift; sourceTree = "<group>"; };
+		F3694C342737B9C500942074 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F3694C362737BC5000942074 /* TFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFError.swift; sourceTree = "<group>"; };
+		F3694C3A2737C7E700942074 /* TFTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFTableViewCell.swift; sourceTree = "<group>"; };
+		F3694C3D2737C7FA00942074 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		F3D7EC412737E20B000487D0 /* IssueDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D7EC402737D793000487D0 /* Kingfisher in Frameworks */,
+				F3694C242737A96700942074 /* SnapKit in Frameworks */,
+				F3694C272737A98E00942074 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +80,80 @@
 		7B9D7D2D27379D6100F0183B /* ThingsFlow */ = {
 			isa = PBXGroup;
 			children = (
-				7B9D7D2E27379D6100F0183B /* AppDelegate.swift */,
-				7B9D7D3027379D6100F0183B /* SceneDelegate.swift */,
-				7B9D7D3227379D6100F0183B /* ViewController.swift */,
-				7B9D7D3427379D6100F0183B /* Main.storyboard */,
+				F3694C3C2737C7EE00942074 /* Extensions */,
+				F3694C392737C7C400942074 /* View */,
+				F3694C1F2737A65100942074 /* Application */,
+				F3694C202737A66300942074 /* Controllorers */,
+				F3694C212737A67700942074 /* Model */,
+				F3694C2A2737B5DF00942074 /* Networking */,
+				F3694C332737B9B900942074 /* Defines */,
 				7B9D7D3727379D6400F0183B /* Assets.xcassets */,
 				7B9D7D3927379D6400F0183B /* LaunchScreen.storyboard */,
 				7B9D7D3C27379D6400F0183B /* Info.plist */,
 			);
 			path = ThingsFlow;
+			sourceTree = "<group>";
+		};
+		F3694C1F2737A65100942074 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7B9D7D2E27379D6100F0183B /* AppDelegate.swift */,
+				7B9D7D3027379D6100F0183B /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F3694C202737A66300942074 /* Controllorers */ = {
+			isa = PBXGroup;
+			children = (
+				7B9D7D3227379D6100F0183B /* MainViewController.swift */,
+				F3D7EC412737E20B000487D0 /* IssueDetailViewController.swift */,
+			);
+			path = Controllorers;
+			sourceTree = "<group>";
+		};
+		F3694C212737A67700942074 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3694C282737B2F500942074 /* IssueModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3694C2A2737B5DF00942074 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F3694C2B2737B63A00942074 /* TFNetworkManager.swift */,
+				F3694C312737B91200942074 /* TFSearchRouter.swift */,
+				F3694C2F2737B7E500942074 /* TFInterceptor.swift */,
+				F3694C2D2737B72200942074 /* TFLogger.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F3694C332737B9B900942074 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				F3694C342737B9C500942074 /* Constants.swift */,
+				F3694C362737BC5000942074 /* TFError.swift */,
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		F3694C392737C7C400942074 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3694C3A2737C7E700942074 /* TFTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3694C3C2737C7EE00942074 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3694C3D2737C7FA00942074 /* UITableViewCell+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +172,11 @@
 			dependencies = (
 			);
 			name = ThingsFlow;
+			packageProductDependencies = (
+				F3694C232737A96700942074 /* SnapKit */,
+				F3694C262737A98E00942074 /* Alamofire */,
+				F3D7EC3F2737D793000487D0 /* Kingfisher */,
+			);
 			productName = ThingsFlow;
 			productReference = 7B9D7D2B27379D6100F0183B /* ThingsFlow.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +205,11 @@
 				Base,
 			);
 			mainGroup = 7B9D7D2227379D6100F0183B;
+			packageReferences = (
+				F3694C222737A96700942074 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F3694C252737A98E00942074 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F3D7EC3E2737D793000487D0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 7B9D7D2C27379D6100F0183B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +226,6 @@
 			files = (
 				7B9D7D3B27379D6400F0183B /* LaunchScreen.storyboard in Resources */,
 				7B9D7D3827379D6400F0183B /* Assets.xcassets in Resources */,
-				7B9D7D3627379D6100F0183B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +236,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B9D7D3327379D6100F0183B /* ViewController.swift in Sources */,
+				F3694C3B2737C7E700942074 /* TFTableViewCell.swift in Sources */,
+				F3694C372737BC5000942074 /* TFError.swift in Sources */,
+				F3694C3E2737C7FA00942074 /* UITableViewCell+Extensions.swift in Sources */,
+				F3694C322737B91200942074 /* TFSearchRouter.swift in Sources */,
+				F3D7EC422737E20B000487D0 /* IssueDetailViewController.swift in Sources */,
+				7B9D7D3327379D6100F0183B /* MainViewController.swift in Sources */,
+				F3694C2E2737B72200942074 /* TFLogger.swift in Sources */,
+				F3694C292737B2F500942074 /* IssueModel.swift in Sources */,
+				F3694C302737B7E500942074 /* TFInterceptor.swift in Sources */,
 				7B9D7D2F27379D6100F0183B /* AppDelegate.swift in Sources */,
+				F3694C2C2737B63A00942074 /* TFNetworkManager.swift in Sources */,
 				7B9D7D3127379D6100F0183B /* SceneDelegate.swift in Sources */,
+				F3694C352737B9C500942074 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7B9D7D3427379D6100F0183B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B9D7D3527379D6100F0183B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7B9D7D3927379D6400F0183B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -217,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -294,9 +394,9 @@
 				INFOPLIST_FILE = ThingsFlow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,9 +422,9 @@
 				INFOPLIST_FILE = ThingsFlow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,6 +460,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3694C222737A96700942074 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F3694C252737A98E00942074 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F3D7EC3E2737D793000487D0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3694C232737A96700942074 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3694C222737A96700942074 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		F3694C262737A98E00942074 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3694C252737A98E00942074 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F3D7EC3F2737D793000487D0 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3D7EC3E2737D793000487D0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7B9D7D2327379D6100F0183B /* Project object */;
 }
